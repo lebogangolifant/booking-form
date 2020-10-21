@@ -100,10 +100,18 @@ body{
 	color: transparent;
 }
 
+::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+}
+
 .booking-form select.form-control {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	appearance: none;
+}
+
+.form-control option{
+	background-color: #000;
 }
 
 .booking-form select.form-control+.select-arrow {
@@ -188,5 +196,9 @@ body{
 	.copyright{
 		text-align: center;
 		margin-bottom: 10px;
+	}
+	.form-control option{
+		font-size: 12px;
+		width:200px!important;
 	}
  }
