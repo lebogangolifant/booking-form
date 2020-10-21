@@ -1,0 +1,192 @@
+body{
+	background: #000;
+}
+.section {
+	position: relative;
+	height: 100vh;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	-webkit-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+#booking {
+	font-family: 'Montserrat', sans-serif;
+	background-image: url('../img/camper-1.jpg'); /* img alt:"<span>Photo by <a href="https://unsplash.com/@tlisbin?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Tommy Lisbin</a> on <a href="https://unsplash.com/s/photos/camping?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></span>*/
+	background-size: cover;
+	background-position: center;
+}
+
+#booking::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(10, 10, 10, 0.8);
+}
+
+.booking-cta {
+	margin-top: 45px;
+}
+
+.booking-cta h1 {
+	font-size: 5vh;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 900;
+}
+
+.booking-cta p {
+	font-size: 22px;
+	color: #fff;
+}
+
+.booking-form {
+	background: rgba(0, 0, 0, 0.63);
+	-webkit-box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 10px -5px rgba(0, 0, 0, 0.3);
+	max-width: 642px;
+	width: 100%;
+	margin: auto;
+	padding: 40px 30px;
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.booking-form .form-control {
+	background-color: transparent;
+	height: 55px;
+	padding: 0px;
+	padding-top: 15px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 700;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border: none;
+	border-bottom: 1px solid rgba(211, 207, 207, 0.356);
+	border-radius: 0px;
+	-webkit-transition: 0.2s;
+	transition: 0.2s;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.booking-form .form-control::placeholder {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: rgba(0, 0, 0, 0.2);
+}
+
+.booking-form .form-group:not(.input-not-empty) .form-control:not(:focus) {
+	color: transparent;
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 0px;
+	bottom: 7px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: #2c2b2b;
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	color:#2c2b2b;
+	font-weight: 700;
+	position: absolute;
+	top: 20px;
+	left: 0px;
+	text-transform: uppercase;
+	line-height: 24px;
+	height: 23px;
+	font-size: 16px;
+	pointer-events: none;
+	-webkit-transition: 0.2s all;
+	transition: 0.2s all;
+}
+
+.booking-form .form-group .form-control:focus+.form-label {
+	top: 0px;
+	color: #eedc16;
+	font-size: 14px;
+}
+
+.booking-form .form-group.input-not-empty .form-label {
+	top: 0px;
+	color: #eedc16;
+	font-size: 14px;
+}
+
+.booking-form .submit-btn {
+	color: #2c2b2b;
+	background-color: #eedc16;
+	font-weight: 700;
+	height: 55px;
+	padding: 10px 35px;
+	font-size: 18px;
+	border: none;
+	display: block;
+	width: 100%;
+	text-transform: capitalize;
+}
+
+.copyright{
+	color: #fff;
+	font-size: 16px;
+}
+
+.copyright a{
+	text-decoration: none;
+	cursor: pointer;
+	color: #eedc16;
+}
+.copyright a:hover{
+	color: #2c2b2b;
+}
+
+/* mobile responsive */
+@media (max-width: 600px) {
+	.booking-cta{
+		margin-top: 300px;
+	}
+	.copyright{
+		text-align: center;
+		margin-bottom: 10px;
+	}
+ }
